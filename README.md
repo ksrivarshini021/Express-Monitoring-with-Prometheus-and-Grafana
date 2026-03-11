@@ -65,3 +65,5 @@ http_requests_total{method="GET",route="/",status="200"} 5
 process_cpu_user_seconds_total 0.12
 process_resident_memory_bytes 48234496
 ```
+
+Prometheus continuously scrapes these metrics and stores them as time-series data. Grafana dashboards allow users to visualize these metrics, enabling monitoring of API traffic and server resource usage.
