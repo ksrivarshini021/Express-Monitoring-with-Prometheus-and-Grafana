@@ -16,7 +16,7 @@ The monitoring stack used in this project includes:
 
 The first step was to create a simple API server using Express. The server exposes endpoints that simulate API requests and responses.
 
-To enable monitoring, the 'prom-client' library was integrated into the application. This library provides utilities to collect and expose application metrics in a format compatible with Prometheus.
+To enable monitoring, the `prom-client` library was integrated into the application. This library provides utilities to collect and expose application metrics in a format compatible with Prometheus.
 
 Metrics collected include:
 - Total HTTP requests
@@ -24,4 +24,4 @@ Metrics collected include:
 - Memory usage
 - Event loop statistics
 
-The metrics are exposed through a '/metrics' endpoint which Prometheus periodically scrapes.
+The metrics are exposed through a `/metrics` endpoint which Prometheus periodically scrapes.
