@@ -24,16 +24,16 @@ Metrics collected include:
 - Memory usage
 - Event loop statistics
 
-The metrics are exposed through a `/metrics` endpoint which Prometheus periodically scrapes.
+The metrics are exposed through a `/metrics` endpoint which Prometheus periodically scrapes. Server impementation is done in the `server.js` file
 
-#### 2. Containing the applciation 
+#### 2. Containing the appliaction 
 
 The application was containerized using Docker for easy deployment. Containerization ensures that the application and its dependencies run consistently across different environments.
 
 #### 3. Prometheus Configuration
 
 Prometheus was used as the monitoring server responsible for scraping metrics from the application.
-Prometheus uses a pull-based model, it periodically sends HTTP requests to the metrics endpoint.
+Prometheus uses a pull-based model, it periodically sends HTTP requests to the metrics endpoint. The cofigaration can be seen in `prometheus.yml`
 
 Prometheus retrieves metrics from `http://express-app:8000/metrics`
 
